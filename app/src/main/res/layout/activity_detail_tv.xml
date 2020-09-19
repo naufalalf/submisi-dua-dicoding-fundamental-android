@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".DetailTV">
+
+
+        <ImageView
+            android:id="@+id/gambar_detilTV"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginBottom="531dp"
+            android:background="#fff"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvjuduldetilTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="@string/juduldetil"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gambar_detilTV" />
+
+        <TextView
+            android:id="@+id/tv_rilis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/rilisdetil"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rating_detailTV"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tv_rilis_detailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rilis"
+            android:hint="mm-dd-yyyy"
+            android:textAlignment="center"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rilis"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ratingdetil"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvjuduldetilTV"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_detailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating"
+            android:hint="Rating Film"
+            android:textAlignment="center"
+            android:textColor="#000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rating"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/sinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_detailTV"
+            android:layout_marginTop="4dp"
+            android:text="@string/sinopsisdetil"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rilis_detailTV"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/sinopsis_detailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/loremipsum"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@+id/sinopsis"
+            tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
